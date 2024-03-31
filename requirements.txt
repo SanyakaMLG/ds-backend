@@ -4,3 +4,4 @@ pandas
 torch==1.13.1+cpu
 torchvision==0.14.1+cpu
 pillow
+Werkzeug==2.3.7
