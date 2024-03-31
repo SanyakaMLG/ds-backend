@@ -55,17 +55,12 @@ class PlateReader(nn.Module):
         transform = T.Compose([
             T.PILToTensor()
         ])
-<<<<<<< HEAD
-        
-        image = Image.open(image)
-=======
 
         try:
             image = Image.open(image)
         except UnidentifiedImageError:
             raise InvalidImage
 
->>>>>>> final
         image = transform(image)
 
         image = image.repeat(3, 1, 1)
